@@ -1,0 +1,49 @@
+@media (max-width: 1024px) {
+  main{
+    padding: 1.5rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+  }
+
+  span{
+    display: block;
+    width: 100%;
+  }
+
+  .logo{
+    width: 6rem;
+  }
+
+  .apresentacao_resultado{
+    width: 90%;
+    padding: 3rem;
+  }
+  .nenhuma_msg img{
+    display: none;
+  }
+  .nenhuma_msg{
+    gap: 0.5rem;
+  }
+  
+}
+
+@media (max-width: 800px){
+
+  main{
+    gap: 1.5rem;
+  }
+
+  .area_cript-descript{
+    width: 95%;
+  }
+
+  .area_cript-descript .entrada textarea{
+    padding: 1rem;
+  }
+
+  .apresentacao_resultado{
+    width: 95%;
+  }
+}

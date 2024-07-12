@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alura Criptografador</title>
+  </head>
+  <body>
+    <main>
+      <span
+        ><img class="logo" src="./assets/Frame 6.svg" alt="Logo da Alura" />
+      </span>
+      <section class="area_cript-descript">
+        <div class="entrada">
+          <textarea
+            id="texto_user"
+            cols="30"
+            rows="10"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <p>
+            <img
+              src="./assets/bi_exclamation-circle-fill.svg"
+              alt="simbolo de exclamação"
+            />
+            Apenas letras minúsculas e sem acento.
+          </p>
+        </div>
+
+        <div class="butoes_cript-descript">
+          <button class="criptografar">Criptografar</button>
+          <button class="descriptografar">Descriptografar</button>
+        </div>
+      </section>
+      <section class="apresentacao_resultado">
+        <div class="nenhuma_msg">
+          <img
+            src="./assets/High quality products 1 1.svg"
+            alt="cartoon de menina segurando uma lupa"
+          />
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+        <div class="resultado_msg">
+          <p id="resultado">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            corrupti molestias assumenda ad mollitia autem explicabo quibusdam!
+            Facilis ipsum quasi autem. Quaerat, ea. Adipisci accusamus
+            voluptatibus quod nostrum numquam reiciendis.
+          </p>
+          <button id="copy">Copiar</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
