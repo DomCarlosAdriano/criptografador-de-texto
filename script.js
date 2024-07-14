@@ -32,6 +32,15 @@ criptografar.addEventListener("click", () => {
 
   let texto = texto_user.value;
 
+  const regexMaiuscula = /[A-Z]/;
+  const regexAcento = /[\u00C0-\u017F]/;
+
+  if (regexMaiuscula.test(texto)) {
+    return alert("NÃO SÃO ACEITAS LETRAS MAIUSCULAS");
+  } else if (regexAcento.test(texto)) {
+    return alert("NÃO SÃO ACEITAS LETRAS COM ACENTO");
+  }
+
   for (let i = 0; i < texto.length; i++) {
     if (dicionarioCriptografia.hasOwnProperty(texto[i])) {
       textoCriptografado += dicionarioCriptografia[texto[i]];
@@ -68,6 +77,15 @@ descriptografar.addEventListener("click", () => {
   textoCriptografado = "";
 
   let texto = texto_user.value;
+
+  const regexMaiuscula = /[A-Z]/;
+  const regexAcento = /[\u00C0-\u017F]/;
+
+  if (regexMaiuscula.test(texto)) {
+    return alert("NÃO SÃO ACEITAS LETRAS MAIUSCULAS");
+  } else if (regexAcento.test(texto)) {
+    return alert("NÃO SÃO ACEITAS LETRAS COM ACENTO");
+  }
 
   for (let i = 0; i < texto.length; i++) {
     if (dicionarioDescriptografia.hasOwnProperty(texto.substr(i, 5))) {
